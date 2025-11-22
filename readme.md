@@ -23,6 +23,9 @@ This project provides a minimal selfbot framework built on top of discord.js cor
 
 ## 📦 Installation & Setup
 
+> [!NOTE]
+> **Node.js 24.0.0 or newer is required**
+
 ### 1. Install dependencies
 
 ```sh

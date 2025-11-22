@@ -25,7 +25,7 @@ client.once(GatewayDispatchEvents.Ready, async ({ data, api }) => {
 	await client.fetchQuests();
 	const questsValid = client.questManager!.filterQuestsValid();
 	console.log(`Found ${questsValid.length} valid quests to do.`);
-	await Promise.all(
+	await Promise.allSettled(
 		questsValid.map((quest) => client.questManager!.doingQuest(quest)),
 	);
 });

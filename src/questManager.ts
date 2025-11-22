@@ -184,8 +184,8 @@ export class QuestManager implements Iterable<Quest> {
 				}
 				console.log(`Quest "${questName}" completed!`);
 			};
-			fn();
 			console.log(`Spoofing video for ${questName}.`);
+			await fn();
 		} else if (taskName === 'PLAY_ON_DESKTOP') {
 			const interval = 60;
 			while (!quest.isCompleted()) {
